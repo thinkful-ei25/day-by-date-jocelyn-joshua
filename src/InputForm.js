@@ -7,10 +7,9 @@ export default function InputForm(props){
       e.preventDefault()
       props.onSubmit(e.target.enteredDate.value)
       }}>
-      Date:
-      <input type="date" name="enteredDate" min='1752-10-01' />
-      <input type="submit" 
-      />
+      <p>Date</p>
+      <input className="form-field" type="date" name="enteredDate" min='1752-10-01' />
+      <p><input className="button" type="submit"/></p>
     </form>
   </div>
   );
