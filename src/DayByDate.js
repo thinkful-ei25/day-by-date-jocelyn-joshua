@@ -23,8 +23,8 @@ export default class DayByDate extends React.Component{
           }
         }
           />
-        <OutputField value={calcDay(this.state.date)}/>
-      </div>
+        <OutputField value={calcDay(this.state.date)} dateVal={this.state.date}/>
+       </div>
      )
    } 
    
