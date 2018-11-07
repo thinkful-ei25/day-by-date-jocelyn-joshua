@@ -7,15 +7,23 @@ export default function Output(props){
   let valNum = parseInt(props.dateVal.split('-').join(''));
   if(valNum > dateNum){
     return(
-      <h1>That day will be a {props.value}</h1>
+      <div className='output-field'>
+      <h1>{props.dateVal} will be a {props.value}</h1>
+      </div>
     );
   }
   else if(valNum < dateNum){
     return(
-      <h1>That day was a {props.value}</h1>
+      <div className='output-field'>
+      <h1>{props.dateVal} was a {props.value}</h1>
+      </div>
     );
   }
   else{
-    return<h1>That day is {props.value} and it is today!</h1>
+    return(
+    <div className='output-field'>
+      <h1>{props.dateVal} is {props.value} and it is today!</h1>
+    </div>
+    )
   }
 }
